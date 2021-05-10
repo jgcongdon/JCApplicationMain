@@ -1,8 +1,24 @@
 package animal;
 
-public class Dog {
+public class Dog extends Animal {
+    
+   private String sound;
 
-    private String breed;
+   public Dog(String breed, String behavior, int lifespan, double price) {
+            super(breed, behavior, lifespan, price);
+            //super.setBreed("Bulldog");
+        }
+
+    public String getSound() {
+        return "Woof";
+    }
+
+    public void setSound(String sound) {
+        this.sound = sound;
+    }
+
+
+    /*private String breed;
     private int lifespan;
     private String behavior;
     private double price;
@@ -37,6 +53,6 @@ public class Dog {
 
     public void setBreed(String breed) {
         this.breed = breed;
-    }
+    }*/
 
 }
